@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileWorker", "FileWorker\FileWorker.csproj", "{1A4932F2-7B45-4F33-8822-D65FA34E7B18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileWorker.Tests", "FileWorker.Tests\FileWorker.Tests.csproj", "{DB531AC2-E88C-4AAA-AE7E-F2DE32483FC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1A4932F2-7B45-4F33-8822-D65FA34E7B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A4932F2-7B45-4F33-8822-D65FA34E7B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A4932F2-7B45-4F33-8822-D65FA34E7B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB531AC2-E88C-4AAA-AE7E-F2DE32483FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB531AC2-E88C-4AAA-AE7E-F2DE32483FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB531AC2-E88C-4AAA-AE7E-F2DE32483FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB531AC2-E88C-4AAA-AE7E-F2DE32483FC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
