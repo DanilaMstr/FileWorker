@@ -11,6 +11,10 @@ namespace FileWorker
     {
         public void ProcessFile(string fileName)
         {
+            if (fileName ==  null)
+            {
+                throw new ArgumentNullException("Parametr fileName cannot be null");
+            }
             if (File.Exists(fileName) && Path.GetExtension(fileName).Contains(GetFormat()))
                 StartWork(fileName);
             else

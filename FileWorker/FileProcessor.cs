@@ -8,13 +8,32 @@ namespace FileWorker
 {
     class FileProcessor
     {
-        public AbstractFileProcessor fileProcessor;
+        private AbstractFileProcessor fileWorker;
 
-        public FileProcessor(AbstractFileProcessor fileProcessor) => this.fileProcessor = fileProcessor;
+        public AbstractFileProcessor FileWorker
+        {
+            get
+            {
+                return fileWorker;
+            }
+            set
+            {
+                if (value == null)
+                    throw new ArgumentNullException("FileProcessor cannot be null");
+                fileWorker = value;
+            }
+        }
+
+        public FileProcessor(AbstractFileProcessor fileProcessor)
+        {
+            if (fileProcessor == null)
+                throw new ArgumentNullException("Parametr fileProcessor cannot be null");
+            this.fileWorker = fileProcessor;
+        }
 
         public void ProcessFile(string fileName)
         {
-            fileProcessor.ProcessFile(fileName);
+            fileWorker.ProcessFile(fileName);
         }
     }
 }
